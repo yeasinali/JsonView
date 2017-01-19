@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector">
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/imageDialog"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textDialog"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvdes"
+            android:text="dufult text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/declineButton"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:text="cancel "
+        android:layout_below="@+id/ScrollView01"
+        android:layout_alignLeft="@+id/imageDialog"
+        android:layout_alignStart="@+id/imageDialog" />
+
+</RelativeLayout>

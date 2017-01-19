@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/RelativeLayout1">
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="100dp"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <!-- Rightend Arrow -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Yeasisdffffffffffffffffffffdsfsdfsdfsdf dfsdfsd n"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:maxLength="93"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                android:text="This is json list view" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="5:45 PM"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="829dp"
+        android:layout_height="124dp"
+        android:src="@drawable/arrow"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_alignBottom="@+id/linearLayout" />
+
+
+</RelativeLayout>
